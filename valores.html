@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Valores de INCARGO365 - Compromiso, innovación y excelencia en logística." />
+  <title>Valores de INCARGO365</title>
+  <link rel="stylesheet" href="main.css" />
+  <style>
+    .hero.valores {
+      background-image: url('imagenes/transporte1.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero.valores::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero.valores h1 {
+      font-size: 36px;
+      z-index: 2;
+    }
+    .content-container {
+      padding: 40px 20px;
+      background: white;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    section h2 {
+      color: #d88c27;
+      border-bottom: 3px solid #d88c27;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+    p {
+      text-align: justify;
+      font-size: 16px;
+      color: #444;
+      line-height: 1.6;
+    }
+    .values-list {
+      list-style: none;
+      padding: 0;
+    }
+    .values-list li {
+      background: #fff0e6;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      color: #663300;
+    }
+    .values-list li strong {
+      color: #d88c27;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header dinámico -->
+  <div id="header-container"></div>
+
+  <!-- Hero -->
+  <section class="hero valores">
+    <div class="container">
+      <h1>Nuestros Valores</h1>
+    </div>
+  </section>
+
+  <!-- Contenido -->
+  <div class="container content-container">
+    <section>
+      <h2>Compromiso con la Excelencia</h2>
+      <p>En INCARGO365, nos esforzamos por ofrecer soluciones logísticas de la más alta calidad, superando las expectativas de nuestros clientes en cada entrega.</p>
+    </section>
+
+    <section>
+      <h2>Innovación Constante</h2>
+      <p>Adoptamos las últimas tecnologías y metodologías para optimizar nuestros procesos y ofrecer servicios vanguardistas en el sector logístico.</p>
+    </section>
+
+    <section>
+      <h2>Sostenibilidad</h2>
+      <p>Nos comprometemos a reducir nuestro impacto ambiental mediante prácticas sostenibles y el uso eficiente de recursos.</p>
+    </section>
+
+    <section>
+      <h2>Nuestros Valores en Acción</h2>
+      <ul class="values-list">
+        <li><strong>Integridad:</strong> Actuamos con honestidad y transparencia en todas nuestras operaciones.</li>
+        <li><strong>Colaboración:</strong> Trabajamos en equipo para alcanzar objetivos comunes y brindar soluciones integrales.</li>
+        <li><strong>Orientación al Cliente:</strong> Ponemos a nuestros clientes en el centro de todo lo que hacemos, adaptándonos a sus necesidades.</li>
+        <li><strong>Responsabilidad Social:</strong> Contribuimos al bienestar de las comunidades en las que operamos.</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Footer dinámico -->
+  <div id="footer-container"></div>
+
+  <!-- Script para insertar header y footer -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("header.php")
+        .then(res => res.text())
+        .then(data => document.getElementById("header-container").innerHTML = data);
+
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer-container").innerHTML = data);
+    });
+  </script>
+</body>
+</html>

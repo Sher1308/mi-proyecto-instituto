@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ponte en contacto con INCARGO365 para soluciones logísticas personalizadas y soporte excepcional." />
+  <title>Contacto - INCARGO365</title>
+  <link rel="stylesheet" href="main.css" />
+  <style>
+    .hero {
+      background-image: url('imagenes/contact.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero .container {
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+    }
+
+    /* Contacto sección horizontal */
+    .contact-section {
+      display: flex;
+      gap: 40px;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .contact-info-box,
+    .contact-form-box {
+      flex: 1;
+      min-width: 300px;
+      background-color: #fff0e6;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .contact-info-box h2,
+    .contact-form-box h2 {
+      color: #d88c27;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info-box p {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #4d2600;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ffcc80;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .btn {
+      background-color: #ff9900;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e68a00;
+    }
+
+    /* Mapa */
+    .map {
+      padding: 60px 20px;
+    }
+
+    .map h2 {
+      text-align: center;
+      color: #d88c27;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .map-container {
+      position: relative;
+      overflow: hidden;
+      padding-top: 56.25%;
+    }
+
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header dinámico -->
+  <div id="header-container"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>Contacto</h1>
+        <p>Estamos aquí para ayudarte. Ponte en contacto con nosotros para cualquier consulta.</p>
+      </div>
+    </section>
+
+    <!-- Contacto Horizontal: Info + Formulario -->
+    <section class="contact-section">
+      <!-- Información de contacto -->
+      <div class="contact-info-box">
+        <h2>Información de Contacto</h2>
+        <p><strong>Dirección:</strong><br>Carrer dels Motors, 244<br>08040 L'Hospitalet de Llobregat, Barcelona</p>
+        <p><strong>Teléfono:</strong><br>932 033 332</p>
+        <p><strong>Email:</strong><br>contacto@incargo365.com</p>
+        <p><strong>Horario:</strong><br>Lunes a Viernes, 9:00 - 18:00</p>
+      </div>
+
+      <!-- Formulario -->
+      <div class="contact-form-box">
+        <h2>Formulario de Contacto</h2>
+        <form action="send_message.php" method="POST">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="map">
+      <div class="container">
+        <h2>Encuéntranos</h2>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.243357924352!2d2.1303176755206152!3d41.34706389849618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498b19d2b2713%3A0x8d06decc9fd998f6!2sCarrer%20dels%20Motors%2C%20244%2C%2008040%20L&#39;Hospitalet%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1746716947123!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer dinámico -->
+  <div id="footer-container"></div>
+
+  <!-- Script para cargar header y footer -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("header.php")
+        .then(res => res.text())
+        .then(data => document.getElementById("header-container").innerHTML = data);
+
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer-container").innerHTML = data);
+    });
+  </script>
+</body>
+</html>

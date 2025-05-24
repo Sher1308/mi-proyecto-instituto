@@ -1,0 +1,219 @@
+<!-- Modificaciones integradas en paleteria.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Servicio de Envío de Paletería Industrial - INCARGO365" />
+  <title>Paletería Industrial | INCARGO365</title>
+  <link rel="stylesheet" href="main.css" />
+  <style>
+    .hero.paleteria {
+      background-image: url('imagenes/banner-paleteria.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+    }
+    .hero.paleteria::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero.paleteria h1 {
+      font-size: 36px;
+      z-index: 2;
+    }
+    .content-section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .grid-2 img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .highlight-btn {
+      background-color: #a1202c;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .benefits {
+      background-color: #a1202c;
+      color: white;
+      padding: 60px 20px;
+    }
+    .benefit-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      color: #111;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .card img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .card p {
+      margin: 0;
+    }
+    .checklist ul {
+      padding-left: 20px;
+    }
+    .checklist li::marker {
+      content: '✔ ';
+      color: #a1202c;
+      font-weight: bold;
+    }
+    .checklist img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <!-- Hero -->
+  <section class="hero paleteria">
+    <h1>Servicio de envío de paletería industrial</h1>
+  </section>
+
+  <!-- Introducción -->
+  <!-- Introducción actualizada -->
+  <div class="content-section grid-2">
+    <img src="imagenes/paleteria-industrial-sertrans-1.webp" alt="Paletería Industrial" style="border-radius: 12px; width: 100%; height: auto;" />
+    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+      <p style="font-size: 20px; line-height: 1.6;">
+        <strong>INCARGO365</strong> realiza envíos de mercancía paletizada por todo el territorio nacional y Europa. Nuestro servicio está diseñado para ofrecer eficiencia, seguridad y ahorro a empresas que necesitan transportar grandes volúmenes de productos. Gracias a nuestra red logística, garantizamos que tus mercancías lleguen a tiempo y en perfecto estado. <br><br>
+        Optimizamos cada proceso para ofrecerte la mejor relación entre coste y beneficio, adaptándonos a las necesidades de tu negocio.
+      </p>
+      <a href="contact.html" class="highlight-btn">Pedir servicio de Paletización</a>
+    </div>
+  </div>
+  
+
+  <!-- ¿Qué es paletización? (actualizado) -->
+  <div class="content-section grid-2">
+    <div style="display: flex; flex-direction: column; justify-content: center;">
+      <h2 style="font-size: 30px; margin-bottom: 20px;">¿Qué es paletización?<br>Servicio de envío industrial</h2>
+      <p style="font-size: 18px; line-height: 1.7; margin-bottom: 16px;">
+        El envío de <strong>paletería industrial</strong> se refiere al proceso de transporte de cargas paletizadas que se utilizan en sectores como la industria, construcción y manufactura.
+      </p>
+      <p style="font-size: 18px; line-height: 1.7; margin-bottom: 16px;">
+        Estas cargas se colocan en palets para facilitar su manipulación y transporte. Nos encargamos de recoger, transportar y entregar los palets a destinos locales, nacionales o internacionales.
+      </p>
+      <p style="font-size: 18px; line-height: 1.7;">
+        <strong>INCARGO365</strong> garantiza una <strong>entrega puntual y segura</strong> de tus productos a través de una red confiable. Cumplimos con los requisitos logísticos de tus envíos industriales.
+      </p>
+    </div>
+    <img src="imagenes/paleteria-industrial-sertrans-servicio2.webp" alt="Carga paletizada" style="border-radius: 12px; width: 100%; height: auto;" />
+  </div>
+  
+
+  <!-- Beneficios del servicio -->
+  <section class="benefits">
+    <div class="content-section">
+      <h2>Paletizado<br />Beneficios del Servicio de Envío de Paletería Industrial</h2>
+    </div>
+    <div class="benefit-cards">
+      <div class="card">
+        <img src="imagenes/flexibilidad-de-envio-servicio (1).webp" alt="Icono flexibilidad">
+        <div>
+          <h3>Flexibilidad</h3>
+          <p>Se adapta a tus necesidades y requerimientos específicos.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="imagenes/cataluna-13.webp" alt="Icono seguridad">
+        <div>
+          <h3>Seguridad garantizada</h3>
+          <p>Utilizamos equipos adecuados y personal capacitado para garantizar la entrega en perfectas condiciones.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="imagenes/capacidad-de-carga (1).webp" alt="Icono logística">
+        <div>
+          <h3>Eficiencia Logística</h3>
+          <p>Reducimos tiempos de espera y mejoramos la eficiencia en cada envío paletizado.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="imagenes/ahorro-dinero (1).webp" alt="Icono ahorro">
+        <div>
+          <h3>Costes reducidos</h3>
+          <p>Pagas solo por el espacio ocupado en el transporte, sin necesidad de contratar el vehículo completo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinatarios del servicio -->
+  <!-- Paletizado: ¿A quién va dirigido? (actualizado) -->
+  <!-- Paletizado: ¿A quién va dirigido? (mejorado) -->
+  <div class="content-section grid-2">
+    <img src="imagenes/paletizacion-servicio3.webp" alt="Almacén Palets" style="border-radius: 12px; width: 100%; height: auto;" />
+    <div style="display: flex; flex-direction: column; justify-content: center; padding: 10px 0;">
+      <h2 style="font-size: 28px; margin-bottom: 30px;">Paletizado industrial: ¿A quién va dirigido?</h2>
+      <ul style="list-style: none; padding-left: 0; font-size: 20px; line-height: 2;">
+        <li>✔️ <strong>Manufactura:</strong> materiales y productos acabados para distribución nacional e internacional.</li>
+        <li>✔️ <strong>Construcción:</strong> materiales pesados y maquinaria adaptada a entornos de obra complejos.</li>
+        <li>✔️ <strong>Distribución:</strong> envíos frecuentes desde y hacia centros logísticos o almacenes centrales.</li>
+        <li>✔️ <strong>Comercio Internacional:</strong> exportación e importación eficiente con cumplimiento aduanero.</li>
+        <li>✔️ <strong>Alimentación:</strong> productos frescos o secos, con control de temperatura y entrega rápida.</li>
+        <li>✔️ <strong>Farmacéutica:</strong> suministros médicos con condiciones de manipulación específicas.</li>
+        <li>✔️ <strong>Industria Química:</strong> productos peligrosos bajo estrictas normativas de seguridad.</li>
+      </ul>
+    </div>
+  </div>
+  
+  
+
+  <div id="footer-container"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("header.php")
+        .then(res => res.text())
+        .then(data => document.getElementById("header-container").innerHTML = data);
+
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer-container").innerHTML = data);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de Clientes de INCARGO365 - Accede a herramientas y recursos para gestionar tus envíos.">
+    <title>Portal de Clientes - INCARGO365</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* Ajustes específicos para la página del portal de clientes */
+        .hero.portal-clientes {
+            background-image: url('imagenes/portal-clientes-banner.jpg'); /* Cambia por la ruta de tu imagen */
+            height: 250px;
+        }
+        .content-container {
+            padding: 40px 20px;
+            background: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h2 {
+            color: #d88c27;
+            border-bottom: 3px solid #d88c27;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        p {
+            text-align: justify;
+            font-size: 16px;
+            color: #444;
+        }
+        .portal-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .portal-feature {
+            background: #fff0e6;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .portal-feature img {
+            width: 100%;
+            max-width: 80px;
+            margin-bottom: 15px;
+        }
+        .portal-feature h3 {
+            color: #d88c27;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .portal-feature p {
+            font-size: 14px;
+            color: #663300;
+        }
+        .login-section {
+            background: #fff0e6;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 30px;
+        }
+        .login-section h2 {
+            color: #d88c27;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .login-section input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #ffcc80;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .login-section button {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .login-section button:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown about-dropdown">
+                        <a href="#">Sobre Nosotros</a>
+                        <ul class="dropdown-menu about-menu">
+                            <li><a href="historia_empresa.html">Historia</a></li>
+                            <li><a href="valores.html">Valores</a></li>
+                            <li><a href="equipo.html">Equipo</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown services-dropdown">
+                        <a href="services.html">Servicios</a>
+                        <ul class="dropdown-menu services-menu">
+                            <li><a href="portal-clientes.html">Portal de Clientes</a></li>
+                            <li><a href="transporte-maritimo.html">Transporte Marítimo</a></li>
+                            <li><a href="transporte-aereo.html">Transporte Aéreo</a></li>
+                            <li><a href="temperatura-controlada.html">Temperatura Controlada</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resources.html">Recursos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <!-- Botón Área de Clientes y Selector de idiomas -->
+                    <li class="client-area-container">
+                        <a href="area-clientes.html" class="client-area-btn">Área de Clientes</a>
+                        <div class="language-dropdown">
+                            <a href="#" class="language-toggle">
+                                <img src="imagenes/espana.png" alt="Español" class="language-flag">
+                                ES
+                            </a>
+                            <ul class="language-menu">
+                                <li>
+                                    <a href="?lang=es">
+                                        <img src="imagenes/espana.png" alt="Español" class="language-flag">
+                                        ES
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="?lang=en">
+                                        <img src="imagenes/reino-unido.png" alt="Inglés" class="language-flag">
+                                        EN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="?lang=fr">
+                                        <img src="imagenes/francia.png" alt="Francés" class="language-flag">
+                                        FR
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="?lang=de">
+                                        <img src="imagenes/alemania.png" alt="Alemán" class="language-flag">
+                                        DE
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>   
+    <section class="hero portal-clientes">
+        <div class="container">
+            <h1>Portal de Clientes</h1>
+        </div>
+    </section>
+    
+    <div class="container content-container">
+        <section>
+            <h2>Bienvenido al Portal de Clientes</h2>
+            <p>En INCARGO365, ponemos a tu disposición herramientas y recursos para que gestiones tus envíos de manera eficiente. Accede a información en tiempo real, descarga facturas y contacta con nuestro equipo de soporte.</p>
+        </section>
+        
+        <section>
+            <h2>Nuestras Herramientas</h2>
+            <div class="portal-features">
+                <div class="portal-feature">
+                    <img src="imagenes/icono-seguimiento.svg" alt="Seguimiento de Envíos">
+                    <h3>Seguimiento de Envíos</h3>
+                    <p>Consulta el estado de tus envíos en tiempo real y recibe notificaciones sobre su progreso.</p>
+                </div>
+                <div class="portal-feature">
+                    <img src="imagenes/icono-facturacion.svg" alt="Facturación">
+                    <h3>Facturación</h3>
+                    <p>Descarga tus facturas y gestiona tus pagos de manera rápida y sencilla.</p>
+                </div>
+                <div class="portal-feature">
+                    <img src="imagenes/icono-soporte.svg" alt="Soporte Personalizado">
+                    <h3>Soporte Personalizado</h3>
+                    <p>Nuestro equipo está disponible para resolver tus dudas y brindarte asistencia personalizada.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="login-section">
+            <h2>Acceso al Portal</h2>
+            <form>
+                <input type="text" placeholder="Usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <p>¿No tienes una cuenta? <a href="contact.html">Contáctanos</a> para obtener acceso.</p>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <!-- Contenedor Principal -->
+            <div class="footer-grid">
+                <!-- Información de Contacto -->
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><strong>Dirección:</strong> Av. d'Esplugues, 40, Les Corts, 08034 Barcelona</p>
+                    <p><strong>Teléfono:</strong> 932 033 332</p>
+                    <p><strong>Email:</strong> contacto@incargo365.com</p>
+                    <p><strong>Horario:</strong> Lunes a Viernes, 9:00 - 18:00</p>
+                </div>
+    
+                <!-- Enlaces Rápidos -->
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="historia_empresa.html">Sobre Nosotros</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="resources.html">Recursos</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Redes Sociales -->
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <ul class="social-links">
+                        <li><a href="#" aria-label="Facebook"><img src="images/facebook-icon.svg" alt="Facebook"></a></li>
+                        <li><a href="#" aria-label="Twitter"><img src="images/twitter-icon.svg" alt="Twitter"></a></li>
+                        <li><a href="#" aria-label="Instagram"><img src="images/instagram-icon.svg" alt="Instagram"></a></li>
+                        <li><a href="#" aria-label="LinkedIn"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a></li>
+                    </ul>
+                </div>
+    
+                <!-- Newsletter -->
+                <div class="footer-section">
+                    <h3>Suscríbete</h3>
+                    <p>Recibe las últimas noticias y actualizaciones de INCARGO365.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+    
+            <!-- Derechos de Autor y Enlaces Legales -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 INCARGO365 | Todos los derechos reservados.</p>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="privacy.html">Política de Privacidad</a></li>
+                        <li><a href="terms.html">Términos de Uso</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

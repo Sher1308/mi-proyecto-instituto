@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Equipo de INCARGO365 - Conoce a nuestro equipo de expertos en logística." />
+  <title>Equipo de INCARGO365</title>
+  <link rel="stylesheet" href="main.css" />
+  <style>
+    .hero.equipo {
+      background-image: url('imagenes/transporte1.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero.equipo::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero.equipo h1 {
+      font-size: 36px;
+      z-index: 2;
+    }
+    .content-container {
+      padding: 40px 20px;
+      background: white;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    section h2 {
+      color: #d88c27;
+      border-bottom: 3px solid #d88c27;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+    p {
+      text-align: justify;
+      font-size: 16px;
+      color: #444;
+      line-height: 1.6;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .team-member {
+      background: #fff0e6;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .team-member img {
+      width: 100%;
+      max-width: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .team-member h3 {
+      color: #d88c27;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .team-member p {
+      font-size: 14px;
+      color: #663300;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header dinámico -->
+  <div id="header-container"></div>
+
+  <!-- Hero -->
+  <section class="hero equipo">
+    <div class="container">
+      <h1>Nuestro Equipo</h1>
+    </div>
+  </section>
+
+  <!-- Contenido -->
+  <div class="container content-container">
+    <section>
+      <h2>Conoce a Nuestro Equipo</h2>
+      <p>En INCARGO365, contamos con un equipo de profesionales altamente capacitados y comprometidos con la excelencia en el servicio. Nuestro equipo es el corazón de nuestra empresa y trabaja incansablemente para ofrecer soluciones logísticas de calidad.</p>
+    </section>
+
+    <section>
+      <h2>Expertos en Logística</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="imagenes/user.png" alt="Sherzod Yarashev" />
+          <h3>Sherzod Yarashev</h3>
+          <p>Director de Operaciones</p>
+          <p>Sherzod tiene más de 15 años de experiencia en gestión logística y es experto en optimización de procesos.</p>
+        </div>
+        <div class="team-member">
+          <img src="imagenes/user.png" alt="Abel Planas" />
+          <h3>Abel Planas</h3>
+          <p>Gerente de Transporte</p>
+          <p>Abel se especializa en transporte internacional y ha liderado proyectos clave para nuestra expansión global.</p>
+        </div>
+        <div class="team-member">
+          <img src="imagenes/user.png" alt="Roger Torres" />
+          <h3>Roger Torres</h3>
+          <p>Jefe de Almacén</p>
+          <p>Roger es responsable de la gestión de inventarios y asegura que nuestros almacenes operen con máxima eficiencia.</p>
+        </div>
+        <div class="team-member">
+          <img src="imagenes/user.png" alt="Marc De La Fuente" />
+          <h3>Marc De La Fuente</h3>
+          <p>Especialista en Tecnología</p>
+          <p>Marc lidera nuestro equipo de TI, implementando soluciones innovadoras para mejorar nuestros servicios.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer dinámico -->
+  <div id="footer-container"></div>
+
+  <!-- Script para insertar header y footer -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("header.php")
+        .then(res => res.text())
+        .then(data => document.getElementById("header-container").innerHTML = data);
+
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer-container").innerHTML = data);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Transporte Aéreo de INCARGO365 - Soluciones logísticas rápidas y seguras por aire.">
+  <title>Transporte Aéreo - INCARGO365</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    .hero.transporte-aereo {
+      background-image: url('imagenes/transporte_aero.jpg');
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .content-container {
+      padding: 40px 20px;
+      background: white;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    section h2 {
+      color: #d88c27;
+      border-bottom: 3px solid #d88c27;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+    p {
+      text-align: justify;
+      font-size: 16px;
+      color: #444;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .feature-item {
+      background: #fff0e6;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .feature-item img {
+      width: 100%;
+      max-width: 80px;
+      margin-bottom: 15px;
+    }
+    .feature-item h3 {
+      color: #d88c27;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .feature-item p {
+      font-size: 14px;
+      color: #663300;
+    }
+    .process-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .process-step {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: #fff0e6;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .process-step img {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+    }
+    .process-step h3 {
+      color: #d88c27;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    .process-step p {
+      font-size: 14px;
+      color: #663300;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header dinámico -->
+  <div id="header-container"></div>
+
+  <!-- HERO -->
+  <section class="hero transporte-aereo">
+    <div class="container">
+      <h1>Transporte Aéreo</h1>
+    </div>
+  </section>
+
+  <!-- CONTENIDO -->
+  <div class="container content-container">
+    <section>
+      <h2>Soluciones de Transporte Aéreo</h2>
+      <p>En INCARGO365, ofrecemos servicios de transporte aéreo rápidos y seguros para garantizar que tus mercancías lleguen a su destino en el menor tiempo posible. Nuestra red global de socios aéreos nos permite ofrecer soluciones logísticas eficientes y confiables.</p>
+    </section>
+
+    <section>
+      <h2>Ventajas del Transporte Aéreo</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <img src="imagenes/rapidez.png" alt="Rapidez">
+          <h3>Rapidez</h3>
+          <p>El transporte aéreo es ideal para envíos urgentes que requieren entrega en el menor tiempo posible.</p>
+        </div>
+        <div class="feature-item">
+          <img src="imagenes/seguridad2.png" alt="Seguridad">
+          <h3>Seguridad</h3>
+          <p>Nuestros protocolos garantizan la máxima seguridad para tus mercancías durante todo el proceso.</p>
+        </div>
+        <div class="feature-item">
+          <img src="imagenes/GlobalCoverage.png" alt="Cobertura Global">
+          <h3>Cobertura Global</h3>
+          <p>Conectamos aeropuertos en todo el mundo, facilitando el comercio internacional.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Nuestro Proceso</h2>
+      <div class="process-steps">
+        <div class="process-step">
+          <img src="imagenes/Planning.png" alt="Planificación">
+          <div>
+            <h3>Planificación</h3>
+            <p>Analizamos tus necesidades y diseñamos una ruta aérea óptima para tu carga.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <img src="imagenes/air_shipment.png" alt="Embarque">
+          <div>
+            <h3>Embarque</h3>
+            <p>Coordinamos el embarque de tu mercancía en el aeropuerto de origen.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <img src="imagenes/Follow-up.png" alt="Seguimiento">
+          <div>
+            <h3>Seguimiento</h3>
+            <p>Monitoreamos tu carga en tiempo real durante todo el viaje.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <img src="imagenes/Entrega.png" alt="Entrega">
+          <div>
+            <h3>Entrega</h3>
+            <p>Gestionamos la descarga y entrega de tu mercancía en el aeropuerto de destino.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer dinámico -->
+  <div id="footer-container"></div>
+
+  <!-- Script para insertar header y footer -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("header.php")
+        .then(res => res.text())
+        .then(data => document.getElementById("header-container").innerHTML = data);
+
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer-container").innerHTML = data);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Recursos logísticos de INCARGO365 para una gestión eficiente de transporte, almacenaje y distribución.">
+  <title>Recursos - INCARGO365</title>
+  <link rel="stylesheet" href="main.css" />
+  <style>
+    .hero-servicios {
+      background-image: url('imagenes/recursos.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero-servicios::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      z-index: 1;
+      padding: 20px;
+      max-width: 800px;
+    }
+    .hero-content h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero-content p {
+      font-size: 18px;
+    }
+    .recursos-section {
+      padding: 60px 20px;
+      background-color: #fff5e6;
+    }
+    .recursos-section h2 {
+      text-align: center;
+      font-size: 30px;
+      color: #4d2600;
+      margin-bottom: 40px;
+    }
+    .recursos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .recurso-item {
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+    .recurso-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .recurso-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .recurso-info {
+      padding: 20px;
+    }
+    .recurso-info h3 {
+      color: #d88c27;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .recurso-info p {
+      color: #663300;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .recurso-info a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff9900;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .recurso-info a:hover {
+      background-color: #e68a00;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER DINÁMICO -->
+  <div id="header-container"></div>
+
+  <!-- HERO -->
+  <section class="hero-servicios">
+    <div class="hero-content">
+      <h1>Recursos Profesionales</h1>
+      <p>Explora nuestras herramientas y guías diseñadas para mejorar tus procesos logísticos y de transporte.</p>
+    </div>
+  </section>
+
+  <!-- RECURSOS DESTACADOS -->
+  <section class="recursos-section">
+    <h2>Soluciones Logísticas a tu Alcance</h2>
+    <div class="recursos-grid">
+      <!-- Recurso 1 -->
+      <div class="recurso-item">
+        <img src="imagenes/almacen.jpg" alt="Gestión de Almacenes">
+        <div class="recurso-info">
+          <h3><a href="gestion-almacenes.html">Gestión de Almacenes</a></h3>
+          <p>Descubre cómo optimizar tu espacio de almacenamiento, reducir costes operativos y mejorar el control de inventario con nuestras estrategias de almacenaje inteligente aplicadas en distintos sectores logísticos.</p>
+        </div>
+      </div>
+      <!-- Recurso 2 -->
+      <div class="recurso-item">
+        <img src="imagenes/planificar-rutas.webp" alt="Planificación de Rutas">
+        <div class="recurso-info">
+          <h3><a href="planificacion-rutas.html">Planificación de Rutas</a></h3>
+          <p>Aprende a diseñar rutas logísticas más eficientes, considerando tiempos, costes y sostenibilidad. Minimiza kilómetros recorridos y mejora tus plazos de entrega con nuestras recomendaciones prácticas.</p>
+        </div>
+      </div>
+      <!-- Recurso 3 -->
+      <div class="recurso-item">
+        <img src="imagenes/SEGUIMIENTO-DE-ENVIOS.png" alt="Seguimiento de Envíos">
+        <div class="recurso-info">
+          <h3><a href="seguimiento-envios.html">Seguimiento de Envíos</a></h3>
+          <p>Implementa herramientas de trazabilidad en tiempo real para garantizar la transparencia y fiabilidad en tus entregas. Conoce las mejores soluciones para tener visibilidad completa del transporte.</p>
+        </div>
+      </div>
+      <!-- Recurso 4 -->
+      <div class="recurso-item">
+        <img src="imagenes/DocumentosTransporte.jpg" alt="Documentación de Transporte">
+        <div class="recurso-info">
+          <h3><a href="documentacion-transporte.html">Documentación de Transporte</a></h3>
+          <p>Accede a plantillas y guías prácticas sobre la gestión de documentos esenciales como el conocimiento de embarque (BL), carta de porte, packing list y formularios aduaneros digitales.</p>
+        </div>
+      </div>
+      <!-- Recurso 5 -->
+      <div class="recurso-item">
+        <img src="imagenes/protocolo_seg.jpg" alt="Protocolos de Seguridad">
+        <div class="recurso-info">
+          <h3><a href="protocolos-seguridad.html">Protocolos de Seguridad</a></h3>
+          <p>Consulta los procedimientos recomendados para proteger tus mercancías, flotas y almacenes. Incluye medidas ante robos, condiciones críticas y gestión de riesgos logísticos.</p>
+        </div>
+      </div>
+      <!-- Recurso 6 -->
+      <div class="recurso-item">
+        <img src="imagenes/sostenible.jpg" alt="Logística Sostenible">
+        <div class="recurso-info">
+          <h3><a href="logistica-sostenible.html">Logística Sostenible</a></h3>
+          <p>Explora acciones para reducir tu huella ecológica: transporte verde, embalajes reutilizables, eficiencia energética y certificaciones ambientales clave para la cadena de suministro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- FOOTER DINÁMICO -->
+  <div id="footer-container"></div>
+
+  <!-- JS PARA HEADER Y FOOTER -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Cargar header
+      fetch("header.php")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header-container").innerHTML = data;
+        });
+
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer-container").innerHTML = data);
+    });
+  </script>
+</body>
+</html>

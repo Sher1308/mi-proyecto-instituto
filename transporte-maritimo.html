@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Soluciones logísticas globales por mar - Transporte Marítimo de INCARGO365">
+  <title>Transporte Marítimo - INCARGO365</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* Container and utility classes */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    h2 {
+      color: #d88c27;
+      border-bottom: 3px solid #d88c27;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+    p {
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 1em;
+      text-align: justify;
+    }
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    /* Hero */
+    .hero {
+      background: url('imagenes/marit') center/cover no-repeat;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: #fff;
+      text-align: center;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero h1 {
+      position: relative;
+      font-size: 2.5rem;
+      z-index: 1;
+    }
+
+    /* Features grid */
+    .features {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .feature {
+      @extend .card;
+      background: #fff0e6;
+      text-align: center;
+    }
+    .feature img {
+      max-width: 80px;
+      margin-bottom: 15px;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .feature h3 {
+      color: #d88c27;
+      font-size: 1.25rem;
+      margin: 0.5em 0;
+    }
+    .feature p {
+      color: #663300;
+      font-size: 0.875rem;
+    }
+
+    /* Process steps */
+    .steps {
+      gap: 20px;
+    }
+    .step {
+      display: flex;
+      gap: 20px;
+      @extend .card;
+      background: #fff0e6;
+      align-items: center;
+    }
+    .step img {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+    .step-content h3 {
+      color: #d88c27;
+      margin: 0 0 5px;
+      font-size: 1.2rem;
+    }
+    .step-content p {
+      color: #663300;
+      margin: 0;
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header dinámico -->
+  <div id="header-container"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Transporte Marítimo</h1>
+    </div>
+  </section>
+
+  <!-- Contenido -->
+  <main class="container">
+    <article class="card" style="margin-top: 20px;">
+      <h2>Soluciones de Transporte Marítimo</h2>
+      <p>En INCARGO365, ofrecemos servicios de transporte marítimo confiables y eficientes para conectar tu negocio con mercados globales. Nuestra red logística internacional garantiza que tus mercancías lleguen a su destino de manera segura y puntual.</p>
+    </article>
+
+    <section class="grid features">
+      <h2>Ventajas del Transporte Marítimo</h2>
+      <div class="feature">
+        <img src="imagenes/Cost_Efficient.png" alt="Costo Eficiente" loading="lazy">
+        <h3>Costo Eficiente</h3>
+        <p>Una de las opciones más económicas para envíos internacionales de gran volumen.</p>
+      </div>
+      <div class="feature">
+        <img src="imagenes/HighCapacity.jpeg" alt="Alta Capacidad" loading="lazy">
+        <h3>Alta Capacidad</h3>
+        <p>Ideal para transportar grandes volúmenes de mercancía, desde contenedores hasta carga a granel.</p>
+      </div>
+      <div class="feature">
+        <img src="imagenes/GlobalCoverage.png" alt="Cobertura Global" loading="lazy">
+        <h3>Cobertura Global</h3>
+        <p>Conectamos puertos en todo el mundo, facilitando el comercio internacional.</p>
+      </div>
+    </section>
+
+    <section class="grid steps">
+      <h2>Nuestro Proceso</h2>
+      <div class="step">
+        <img src="imagenes/Planning.png" alt="Planificación" loading="lazy">
+        <div class="step-content">
+          <h3>Planificación</h3>
+          <p>Analizamos tus necesidades y diseñamos una ruta óptima para tu carga.</p>
+        </div>
+      </div>
+      <div class="step">
+        <img src="imagenes/Shipment.png" alt="Embarque" loading="lazy">
+        <div class="step-content">
+          <h3>Embarque</h3>
+          <p>Coordinamos el embarque de tu mercancía en el puerto de origen.</p>
+        </div>
+      </div>
+      <div class="step">
+        <img src="imagenes/Follow-up.png" alt="Seguimiento" loading="lazy">
+        <div class="step-content">
+          <h3>Seguimiento</h3>
+          <p>Monitoreamos tu carga en tiempo real durante todo el viaje.</p>
+        </div>
+      </div>
+      <div class="step">
+        <img src="imagenes/Entrega.png" alt="Entrega" loading="lazy">
+        <div class="step-content">
+          <h3>Entrega</h3>
+          <p>Gestionamos la descarga y entrega de tu mercancía en el puerto de destino.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer dinámico -->
+  <div id="footer-container"></div>
+
+  <!-- Script para insertar header y footer -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('header.php').then(res => res.text()).then(html => document.getElementById('header-container').innerHTML = html);
+      fetch('footer.html').then(res => res.text()).then(html => document.getElementById('footer-container').innerHTML = html);
+    });
+  </script>
+</body>
+</html>

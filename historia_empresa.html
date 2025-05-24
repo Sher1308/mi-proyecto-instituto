@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Historia de INCARGO365 - Innovación en logística y transporte." />
+  <title>Historia de INCARGO365</title>
+  <link rel="stylesheet" href="main.css" />
+  <style>
+    .hero.historia {
+      background-image: url('imagenes/banner-ruta-sin-fin.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero.historia::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero.historia h1 {
+      font-size: 36px;
+      z-index: 2;
+    }
+
+    .content-container {
+      padding: 40px 20px;
+      background: white;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-top: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      color: #d88c27;
+      border-bottom: 3px solid #d88c27;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 16px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    /* NUEVA SECCIÓN FINAL */
+
+    .historia-final {
+      text-align: center;
+      margin-top: 60px;
+      padding: 40px 20px;
+    }
+
+    .historia-final h2 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .historia-final p {
+      font-size: 18px;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      line-height: 1.8;
+    }
+
+    .historia-final strong {
+      color: #000;
+      font-weight: bold;
+    }
+
+    .historia-final h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #111;
+    }
+
+    .certificados {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .cert {
+      background: #fff;
+      border: 2px solid #b3001b;
+      border-radius: 12px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .cert img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    .cert p {
+      font-size: 14px;
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    .cert p strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 5px;
+      color: #b3001b;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header dinámico -->
+  <div id="header-container"></div>
+
+  <!-- Sección Hero -->
+  <section class="hero historia">
+    <div class="container">
+      <h1>Historia de INCARGO365</h1>
+    </div>
+  </section>
+ 
+
+    <!-- Sección final con certificados -->
+    <section class="historia-final">
+      <h2>SIEMPRE, MÁS LEJOS.</h2>
+      <p>
+        En <strong>2010</strong> nacimos como una pequeña empresa familiar. <strong>Más de 10 años</strong> después y con un equipo comprometido, seguimos manteniendo esa esencia cercana, que nos impulsa a cuidar cada detalle y garantizar la satisfacción total de nuestros clientes. 
+        <strong>En INCARGO365, cada envío nos importa.</strong>
+        Por eso, hemos desarrollado los más <strong>altos estándares de calidad y eficiencia</strong>, innovando constantemente para ser más <strong>sostenibles y respetuosos</strong> con el entorno. Y siempre, ofreciéndote un servicio competitivo y profesional.
+      </p>
+
+      <h3>CERTIFICADOS</h3>
+      <div class="certificados">
+        <div class="cert">
+          <img src="imagenes/iso.png" alt="ISO 9001">
+          <p><strong>ISO 9001:2015</strong>Certificado No. EA23P45</p>
+        </div>
+        <div class="cert">
+          <img src="imagenes/iso.png" alt="ISO 26000">
+          <p><strong>ISO 26000:2012</strong>Certificado</p>
+        </div>
+        <div class="cert">
+          <img src="imagenes/iso.png" alt="ISO 39001">
+          <p><strong>ISO 39001:2013</strong>Certificado No. EA45X75</p>
+        </div>
+        <div class="cert">
+          <img src="imagenes/iso.png" alt="ISO 14001">
+          <p><strong>ISO 14001:2015</strong>Certificado No. EA76G90</p>
+        </div>
+        <div class="cert">
+          <img src="imagenes/iso.png" alt="ISO 45001">
+          <p><strong>ISO 45001:2018</strong>Certificado No. EA22L70</p>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer dinámico -->
+  <div id="footer-container"></div>
+
+  <!-- Script para insertar header y footer -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("header.php")
+        .then(res => res.text())
+        .then(data => document.getElementById("header-container").innerHTML = data);
+
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer-container").innerHTML = data);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Soluciones de transporte y logística de INCARGO365 por sectores.">
+  <title>Soluciones - INCARGO365</title>
+  <link rel="stylesheet" href="main.css" />
+  <style>
+    .hero.soluciones {
+      background-image: url('imagenes/soluciones.png');
+      height: 550px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: white;
+    }
+
+    .intro {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .sector-box {
+      background-color: #fff8f0;
+      border-left: 5px solid #d88c27;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .sector-title {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #4d2600;
+    }
+
+    .sector-title img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .sector-box ul {
+      padding-left: 20px;
+      color: #444;
+      font-size: 15px;
+    }
+
+    .cta-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .cta-buttons a {
+      display: inline-block;
+      background-color: #000;
+      color: white;
+      padding: 12px 24px;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-buttons a:hover {
+      background-color: #333;
+    }
+    header .container {
+      width: 90% !important;
+      max-width: 1200px !important;
+      margin: 0 auto !important;
+      padding: 0 20px !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header dinámico -->
+  <div id="header-container"></div>
+
+  <!-- HERO -->
+  <section class="hero soluciones">
+    <div class="container">
+      <h1>Soluciones</h1>
+    </div>
+  </section>
+
+  <div class="container">
+    <p class="intro">
+      Gracias a la experiencia compartida con nuestros clientes, hemos desarrollado soluciones específicas de transporte y logística para todos los sectores industriales.
+      Así hemos convertido los problemas logísticos en soluciones.
+    </p>
+
+    <div class="grid">
+      <div class="sector-box">
+        <div class="sector-title"><img src="imagenes/farma.svg" alt="Farma">Farma</div>
+        <ul>
+          <li>Control de temperatura</li>
+          <li>Limpieza y desinfección de las termo cajas</li>
+          <li>Calibración 3 temperaturas (15, 25, 2/8ºC)</li>
+          <li>Remolques bi-temperatura</li>
+          <li>Protocolos GDP</li>
+        </ul>
+      </div>
+
+      <div class="sector-box">
+        <div class="sector-title"><img src="imagenes/quimica.svg" alt="Química">Química</div>
+        <ul>
+          <li>FTL, LTL, Express</li>
+          <li>Medios preparados para ADR</li>
+          <li>Control de temperatura</li>
+          <li>Formación de conductores</li>
+          <li>Evaluación SQAS</li>
+        </ul>
+      </div>
+
+      <div class="sector-box">
+        <div class="sector-title"><img src="imagenes/automocion.svg" alt="Automoción">Automoción</div>
+        <ul>
+          <li>FTL, LTL, Express, Roundtrips</li>
+          <li>Transporte confidencial</li>
+          <li>Just in time / servicios auxiliares</li>
+        </ul>
+      </div>
+
+      <div class="sector-box">
+        <div class="sector-title"><img src="imagenes/alimentacion.svg" alt="Alimentación">Alimentación</div>
+        <ul>
+          <li>FTL, LTL, Express</li>
+          <li>Desinfección de vehículos</li>
+          <li>Sensorización antihumedad</li>
+          <li>Control de temperatura</li>
+          <li>Horas de entrega</li>
+        </ul>
+      </div>
+
+      <div class="sector-box">
+        <div class="sector-title"><img src="imagenes/ferias.svg" alt="Ferias">Ferias</div>
+        <ul>
+          <li>Entrega y recogida en stand</li>
+          <li>Montaje y desmontaje</li>
+          <li>Cuidado de embalajes</li>
+          <li>Personal desplazado</li>
+        </ul>
+      </div>
+
+      <div class="sector-box">
+        <div class="sector-title"><img src="imagenes/intermodal.svg" alt="Intermodal">Intermodal</div>
+        <ul>
+          <li>Modos combinados de transporte</li>
+          <li>Reducción de huella de carbono</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta-buttons">
+      <a href="transporte-internacional.html">TRANSPORTE INTERNACIONAL</a>
+      <a href="transporte-nacional.html">TRANSPORTE NACIONAL</a>
+      <a href="logistica.html">LOGÍSTICA</a>
+    </div>
+  </div>
+
+  <!-- Footer dinámico -->
+  <div id="footer-container"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    // Cargar header
+      fetch("/header.php")
+        .then(res => {
+          if (!res.ok) throw new Error(`HTTP ${res.status} al cargar header`);
+          return res.text();
+        })
+        .then(html => {
+          document.getElementById("header-container").innerHTML = html;
+        })
+        .catch(err => console.error("Error cargando header:", err));
+
+    // Cargar footer
+      fetch("/footer.html")
+        .then(res => {
+          if (!res.ok) throw new Error(`HTTP ${res.status} al cargar footer`);
+          return res.text();
+        })
+        .then(html => {
+          document.getElementById("footer-container").innerHTML = html;
+        })
+        .catch(err => console.error("Error cargando footer:", err));
+    });
+  </script>
+</body>
+</html>
